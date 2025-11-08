@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+    <div class="toggle-group">
+      <label class="switch">
+        <input type="checkbox" name="" id="darkModeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="container" id="container-box">
+      <div class="calculator">
+          <input type="text" name="" id="output-display" placeholder="0" />
+          <button onclick="clearDisplay()" class="operator-other">C</button>
+          <button onclick="deleteLast()" class="operator-other"><i class="fa-solid fa-delete-left"></i></button>
+          <button onclick="appendValue('%')" class="operator-other">%</button>
+          <button onclick="appendValue('/')" class="operator-other">/</button>
+          <button onclick="appendValue('7')">7</button>
+          <button onclick="appendValue('8')">8</button>
+          <button onclick="appendValue('9')">9</button>
+          <button onclick="appendValue('*')" class="operator-other">*</button>
+          <button onclick="appendValue('4')">4</button>
+          <button onclick="appendValue('5')">5</button>
+          <button onclick="appendValue('6')">6</button>
+          <button onclick="appendValue('-')"class="operator-other" >-</button>
+          <button onclick="appendValue('1')">1</button>
+          <button onclick="appendValue('2')">2</button>
+          <button onclick="appendValue('3')">3</button>
+          <button class="add" onclick="appendValue('+')" class="operator-other">+</button>
+          <button onclick="appendValue('.')">.</button>
+          <button onclick="appendValue('0')">0</button>
+          <button class="equal operator" onclick="calculate()">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
